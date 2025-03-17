@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #212427;
+}
+
+.imagem>.cartao {
+    position: relative;
+    bottom: 800px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem>.cartao>h2 {
+    color: #FF598B;
+    font-size: 50px;
+    font-weight: 1000;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+
+}
+
+.imagem>.cartao>p {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.imagem>#confete{
+    position: relative;
+    bottom: 800px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem{
+    position: fixed;
+}
