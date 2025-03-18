@@ -47,7 +47,7 @@ body {
     height: 100vh;
     width: auto;
     display: block;
-    border: solid 30px black;
+    border: solid 30px #131516;
 }
 
 main {
@@ -55,7 +55,65 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 77vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
 
+main>h2{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+
+main>p{
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+main>article>form>p{
+    color: white;
+}
+
+label{
+    color: #C8CDD0;
+}
+
+#data{
+    color: #C8CDD0;
+}
+
+#hora{
+    color: #C8CDD0;
+}
+
+
+
+
+input{
+    background-color: #1C1F21;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color: #C8CDD0;
+}
+
+textarea{
+    background-color: #1C1F21;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+svg{
+    color: #5d6166;
 }
 
 main>article>form {
@@ -126,3 +184,28 @@ input:checked+.slider:before {
     border-radius: 10px;
     cursor: pointer;
 }
+
+button {
+    background: var(--Colors-Shape-shape-button, #1D6FB6);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[name="temas1"] {
+    /* Estilos para todos os inputs com name="temas" */
+    background-color: blue;
+  }
+  
+  input[id^="tema1"] {
+    /* Estilos para todos os inputs com id começando com "tema" */
+    background-color: red;
+  }
+  
+  label[for^="tema1"] {
+    /* Estilos para todos os labels com for começando com "tema" */
+    background-color: green;
+  }
+

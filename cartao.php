@@ -42,9 +42,9 @@
                 <label for="hora">Hora:</label>
                 <input type="time" name="hora" id="hora" required>
                 <label for="local">Local:</label>
-                <input type="text" name="local" id="local" required>
+                <input placeholder="Link ou endereço" type="text" name="local" id="local" required>
                 <label for="descricao">Descrição:</label>
-                <textarea name="descricao" id="descricao" cols="30" rows="10" required></textarea>
+                <textarea placeholder="Escreva sobre os detalhes do evento" name="descricao" id="descricao" cols="30" rows="10" required></textarea>
 
                 <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
