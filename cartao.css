@@ -7,9 +7,9 @@ body {
 }
 
 .imagem>.cartao {
-    position: relative;
-    bottom: 800px;
-    left: 20px;
+    position: fixed;
+    top: 20vh;
+    left: 10vh;
     display: flex;
     flex-direction: column;
 }
@@ -34,13 +34,18 @@ body {
 }
 
 .imagem>#confete{
-    position: relative;
-    bottom: 800px;
-    left: 20px;
+    position: fixed;
+    top: 8vh;
+    left: 10vh;
     display: flex;
     flex-direction: column;
 }
 
-.imagem{
+
+#bolo{
     position: fixed;
+    height: 100vh;
+    width: auto;
+    display: block;
+    border: solid 30px black;
 }
