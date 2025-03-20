@@ -57,16 +57,50 @@
                     </svg>Personalização</p>
 
                 <p>Cor principal</p>
-                <?php for ($i = 0; $i < 11; $i++): ?>
-                    <input type="radio" name="cores" id="cor<?= $i ?>" value="cor<?= $i ?>">
-                    <label for="cor<?= $i ?>"><span class="cor<?= $i ?>"></span></label>
-                <?php endfor; ?>
+                
+            <div class="colors">
+                <div class="color blue" data-cor="#007bff"></div>
+                <div class="color purple" data-cor="#6f42c1"></div>
+                <div class="color pink" data-cor="#e83e8c"></div>
+                <div class="color red" data-cor="#dc3545"></div>
+                <div class="color orange" data-cor="#fd7e14"></div>
+                <div class="color yellow" data-cor="#ffc107"></div>
+                <div class="color green" data-cor="#28a745"></div>
+                <div class="color cyan" data-cor="#17a2b8"></div>
+            </div>
 
                 <p>Tema do evento</p>
-                <?php for ($i = 0; $i < 12; $i++): ?>
-                    <input type="radio" name="temas" id="tema<?= $i ?>" value="tema<?= $i ?>">
-                    <label for="tema<?= $i ?>"><span class="tema<?= $i ?>"></span></label>
-                <?php endfor; ?>
+                <div class="temas1">
+                    <label for="aniversario">Aniversário</label>
+                    <input type="checkbox" name="aniversario" id="idniver">
+                    <label for="casamento">Casamento</label>
+                    <input type="checkbox" name="casamento" id="idcasamento">
+                    <label for="formatura">Formatura</label>
+                    <input type="checkbox" name="formatura" id="idformatura">
+                    <label for="chadebebe">Chá de bebê</label>
+                    <input type="checkbox" name="chadebebe" id="idchadebebe">
+                </div>
+                <div class="temas2">
+                    <label for="chadecozinha">Chá de cozinha</label>
+                    <input type="checkbox" name="chadecozinha" id="idchadecozinha">
+                    <label for="infantil">Infantil</label>
+                    <input type="checkbox" name="infantil" id="idinfantil">
+                    <label for="carnaval">Carnaval</label>
+                    <input type="checkbox" name="carnavak" id="idcarnaval">
+                    <label for="natal">Natal</label>
+                    <input type="checkbox" name="natal" id="idnatal">
+                </div>
+                <div class="temas3">
+                    <label for="pascoa">Pascoa</label>
+                    <input type="checkbox" name="pascoa" id="idpascoa">
+                    <label for="halloween">Halloween</label>
+                    <input type="checkbox" name="halloween" id="idhalloween">
+                    <label for="saojoao">São João</label>
+                    <input type="checkbox" name="saojoao" id="idjoao">
+                    <label for="outros">Outros</label>
+                    <input type="checkbox" name="outros" id="idoutros">
+                </div>
+
 
                 <label class="switch">
                     <input type="checkbox" id="meuSwitch">

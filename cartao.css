@@ -163,11 +163,11 @@ main>article>form {
 }
 
 input:checked+.slider {
-    background-color: #2196F3;
+    background-color: #090a0a;
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #0b0c0c;
 }
 
 input:checked+.slider:before {
@@ -194,18 +194,55 @@ button {
     cursor: pointer;
 }
 
-input[name="temas1"] {
-    /* Estilos para todos os inputs com name="temas" */
-    background-color: blue;
-  }
-  
-  input[id^="tema1"] {
-    /* Estilos para todos os inputs com id começando com "tema" */
-    background-color: red;
-  }
-  
-  label[for^="tema1"] {
-    /* Estilos para todos os labels com for começando com "tema" */
-    background-color: green;
-  }
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
 
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.color.blue   { background-color: #007bff; }
+.color.purple { background-color: #6f42c1; }
+.color.pink   { background-color: #e83e8c; }
+.color.red    { background-color: #dc3545; }
+.color.orange { background-color: #fd7e14; }
+.color.yellow { background-color: #ffc107; }
+.color.green  { background-color: #28a745; }
+.color.cyan   { background-color: #17a2b8; }
+
+.color:hover,
+.color.selected {
+    border-color: #007bff;
+}
+
+.temas1>input {
+    display: grid right;
+    width: 100px;
+    height: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.temas2>input {
+    display: grid right;
+    width: 100px;
+    height: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.temas3>input {
+    display: grid right;
+    width: 100px;
+    height: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
