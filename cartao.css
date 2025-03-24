@@ -194,11 +194,7 @@ button {
     cursor: pointer;
 }
 
-.colors {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5px;
-}
+
 
 .color {
     width: 30px;

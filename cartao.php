@@ -34,7 +34,7 @@
             </svg>Sobre o convite</p>
 
         <article>
-            <form action="" method="post">
+            <form action="geracartao.php" method="post" enctype="multipart/form-data">
                 <label for="nome">Título</label>
                 <input placeholder="Nome do evento" type="text" name="nome" id="nome" required>
                 <label for="data">Data:</label>
@@ -57,48 +57,30 @@
                     </svg>Personalização</p>
 
                 <p>Cor principal</p>
-                
-            <div class="colors">
-                <div class="color blue" data-cor="#007bff"></div>
-                <div class="color purple" data-cor="#6f42c1"></div>
-                <div class="color pink" data-cor="#e83e8c"></div>
-                <div class="color red" data-cor="#dc3545"></div>
-                <div class="color orange" data-cor="#fd7e14"></div>
-                <div class="color yellow" data-cor="#ffc107"></div>
-                <div class="color green" data-cor="#28a745"></div>
-                <div class="color cyan" data-cor="#17a2b8"></div>
-            </div>
+
+                <div class="colors">
+                    <label for="cor">Cores</label>
+                    <input type="color" name="cor" id="Cores">
+                </div>
 
                 <p>Tema do evento</p>
-                <div class="temas1">
-                    <label for="aniversario">Aniversário</label>
-                    <input type="checkbox" name="aniversario" id="idniver">
-                    <label for="casamento">Casamento</label>
-                    <input type="checkbox" name="casamento" id="idcasamento">
-                    <label for="formatura">Formatura</label>
-                    <input type="checkbox" name="formatura" id="idformatura">
-                    <label for="chadebebe">Chá de bebê</label>
-                    <input type="checkbox" name="chadebebe" id="idchadebebe">
-                </div>
-                <div class="temas2">
-                    <label for="chadecozinha">Chá de cozinha</label>
-                    <input type="checkbox" name="chadecozinha" id="idchadecozinha">
-                    <label for="infantil">Infantil</label>
-                    <input type="checkbox" name="infantil" id="idinfantil">
-                    <label for="carnaval">Carnaval</label>
-                    <input type="checkbox" name="carnavak" id="idcarnaval">
-                    <label for="natal">Natal</label>
-                    <input type="checkbox" name="natal" id="idnatal">
-                </div>
-                <div class="temas3">
-                    <label for="pascoa">Pascoa</label>
-                    <input type="checkbox" name="pascoa" id="idpascoa">
-                    <label for="halloween">Halloween</label>
-                    <input type="checkbox" name="halloween" id="idhalloween">
-                    <label for="saojoao">São João</label>
-                    <input type="checkbox" name="saojoao" id="idjoao">
-                    <label for="outros">Outros</label>
-                    <input type="checkbox" name="outros" id="idoutros">
+                <div class="temas">
+                    <label for="tema">Selecione um tema:</label>
+                    <select id="meutema" name="tema">
+                        <option value="">-- Selecione --</option>
+                        <option value="Casamento">Casamento</option>
+                        <option value="Aniversário">Aniversário</option>
+                        <option value="Infantil">Infantil</option>
+                        <option value="Formatura">Formatura</option>
+                        <option value="Chá de bebê">Chá de bebê</option>
+                        <option value="Chá de panela">Chá de panela</option>
+                        <option value="Carnaval">Carnaval</option>
+                        <option value="Pascoa">Pascoa</option>
+                        <option value="São João">São João</option>
+                        <option value="Halloween">Halloween</option>
+                        <option value="Natal">Natal</option>
+                        <option value="Outros">Outros</option>
+                    </select>
                 </div>
 
 
@@ -109,7 +91,7 @@
 
                 <p>Foto de capa</p>
                 <label for="arquivo" class="botao-personalizado">Selecionar arquivo</label>
-                <input type="file" id="arquivo" style="display: none;">
+                <input type="file" id="arquivo" name="arquivoEnviado" style="display: none;">
 
                 <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users">
                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -118,14 +100,14 @@
                         <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                     </svg>Dados para contato</p>
 
-                <label for="nome">Nome</label>
-                <input placeholder="Nome completo" type="text" name="nome" id="nomecontato" required>
+                <label for="nomecont">Nome</label>
+                <input placeholder="Nome completo" type="text" name="nomecont" id="nomecontato" required>
 
-                <label for="email">E-mail</label>
-                <input placeholder="E-mail" type="email" name="email" id="email" required>
+                <label for="emailcont">E-mail</label>
+                <input placeholder="E-mail" type="email" name="emailcont" id="email" required>
 
-                <label for="telefone">Telefone</label>
-                <input placeholder="Telefone" type="tel" name="telefone" id="telefone" required>
+                <label for="telcont">Telefone</label>
+                <input placeholder="Telefone" type="tel" name="telcont" id="telefone" required>
 
                 <label for="termo1">Li e concordo com os <a href="#">termos de uso</a> e com as <a href="#">política de privacidade</a></label>
                 <input type="radio" name="termos1" id="termo1" required>
@@ -134,7 +116,7 @@
                 <label for="termo3">Aceito receber atualizações e promoções por SMS</label>
                 <input type="radio" name="termos3" id="termo3" required>
 
-                <button type="submit">Gerar Convite</button>
+                <input type="submit" value="Gerar convite">
             </form>
         </article>
     </main>

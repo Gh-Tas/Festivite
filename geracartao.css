@@ -1,0 +1,71 @@
+/* geracartao.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left; /* Alinha o texto à esquerda dentro da caixa */
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Estilos para informações específicas */
+p:first-child {
+    font-weight: bold;
+    color: #222;
+    font-size: 18px;
+}
+
+/* Destaque para cores e tema */
+p:nth-child(7) span, /* Cor */
+p:nth-child(8) span /* Tema */ {
+    font-weight: bold;
+    color: #007bff; /* Cor azul para destaque */
+}
+
+/* Estilos para mensagem de erro ou sucesso */
+.container h2 {
+    color: #dc3545; /* Cor vermelha para erro */
+}
+
+.container p:first-child + h2 {
+    color: #28a745; /* Cor verde para sucesso */
+}
+
+/* Adicionando um separador */
+p + p:before {
+    content: "";
+    display: block;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
+/* Estilo para o nome do arquivo enviado */
+.container h2 + p {
+    font-style: italic;
+    color: #6c757d;
+}
